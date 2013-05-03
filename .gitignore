@@ -48,6 +48,13 @@ Adding README.doc on this one
 
 /README.rdoc
 
+# Bundler ----- Added to global gitignore
+# To avoid https://rvm.io/integration/bundler/ & https://github.com/carlhuda/bundler
+######################
+bundler_stubs/
+
+
+
 
 
 
