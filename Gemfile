@@ -1,6 +1,8 @@
 source 'https://rubygems.org'
 
 gem 'rails', '3.2.13'
+gem 'bootstrap-sass', '2.0.0'
+gem 'sprockets', '~> 2.0'
 gem 'jquery-rails'
 gem 'pg', '0.12.2'
 
