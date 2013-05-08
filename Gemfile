@@ -5,6 +5,13 @@ gem 'bootstrap-sass', '2.0.0'
 gem 'sprockets', '~> 2.0'
 gem 'jquery-rails'
 gem 'pg', '0.12.2'
+gem 'bcrypt-ruby', '3.0.1'
+
+group :assets do
+  gem 'sass-rails',   '~> 3.2.4'
+  gem 'coffee-rails', '~> 3.2.2'
+  gem 'uglifier', '>= 1.2.3'
+end
 
 group :development, :test do
   gem 'rspec-rails', '2.10.0'
@@ -14,11 +21,7 @@ group :development, :test do
   gem 'growl_notify'
 end
 
-group :assets do
-  gem 'sass-rails',   '~> 3.2.4'
-  gem 'coffee-rails', '~> 3.2.2'
-  gem 'uglifier', '>= 1.2.3'
-end
+gem 'annotate', ">=2.5.0", group: :development
 
 group :test do
   gem 'capybara', '1.1.2'
