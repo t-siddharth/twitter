@@ -6,7 +6,7 @@ common: &common
   username: Sidd
   password:  # from psql setup, see Postgresql
 
-test:
+test: &test
   <<: *common
   database: myapp_test
   
@@ -19,3 +19,5 @@ development:
   database: myapp_development
   host: localhost
  
+cucumber:
+  <<: *test
