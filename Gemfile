@@ -4,9 +4,11 @@ gem 'rails', '3.2.13'
 gem 'bootstrap-sass', '2.0.0'
 gem 'sprockets', '~> 2.0'
 gem 'jquery-rails'
+
 gem 'pg', '0.12.2'
 gem 'bcrypt-ruby', '3.0.1'
 gem 'json', '~> 1.7.7'
+
 gem 'faker', '1.0.1'
 gem 'will_paginate', '3.0.3'
 gem 'bootstrap-will_paginate', '0.0.6'
@@ -17,26 +19,25 @@ group :assets do
   gem 'uglifier', '>= 1.2.3'
 end
 
-group :development, :test do
+group  :test, :development  do
   gem 'rspec-rails', '2.10.0'
   gem 'guard-rspec', '0.5.5'
+  gem 'guard-spork', '0.3.2'
+  gem 'spork', '0.9.0'
+
   gem 'listen'
-  gem "growl", '~> 1.0.3', :git => "https://github.com/visionmedia/growl.git"
-  gem 'growl_notify'
+  # gem "growl", '~> 1.0.3', :git => "https://github.com/visionmedia/growl.git"
+  # gem 'growl_notify'
 end
 
 gem 'annotate', ">=2.5.0", group: :development
 
 group :test do
   gem 'capybara', '1.1.2'
-  gem 'rb-fsevent', :require => false
-  # gem 'growl', '1.0.3'
-  gem 'guard-spork', '0.3.2'
-  gem 'spork', '0.9.0'
+  gem 'rb-fsevent', :require => false 
   gem 'factory_girl_rails', '1.4.0'
   gem 'cucumber-rails', '1.2.1', require: false
   gem 'database_cleaner', '0.7.0'
-  gem 'json', '~> 1.7.7'
 end
 
 group :production do
