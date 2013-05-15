@@ -1,3 +1,6 @@
-Twitter like app - http://twitastic.herokuapp.com/
+# Twitastic - Project Twitter 
 
-Rewind a few years and an app named Twitter is about to be born. Micropost blogging site in the making.
+This is a practice application imitating Twitter -  micropost blogging site in the making.
+[*Twitastic*](http://twitastic.herokuapp.com/)
+
+by [Sidd Tewari](http://siddtewari.com)
